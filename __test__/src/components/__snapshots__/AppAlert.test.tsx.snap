@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component should not render Alert is showAlert state is false 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  transparent={true}
+  visible={false}
+/>
+`;
+
+exports[`Alert component should render Alert when showAlert state is true 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  transparent={true}
+  visible={true}
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.2)",
+        "display": "flex",
+        "height": "100%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "backgroundColor": "rgba(255, 255, 255, 1)",
+          "borderRadius": 10,
+          "height": "15%",
+          "justifyContent": "center",
+          "marginBottom": "20%",
+          "width": "70%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 15,
+            "paddingHorizontal": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        alert test
+      </Text>
+    </View>
+  </View>
+</Modal>
+`;
