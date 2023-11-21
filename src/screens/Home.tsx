@@ -8,7 +8,10 @@ import AppAlert from "../components/AppAlert";
 const Home = (): JSX.Element => {
     return (
         <>
-            <View style={styles.body}>
+            <View 
+                style={styles.body}
+                testID="app-home-screen"
+            >
                 <SearchBar />
                 <AppList />
             </View>

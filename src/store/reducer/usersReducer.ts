@@ -1,9 +1,7 @@
-import { UserDataType } from "../state/type";
-
 import * as userData from "../../assets/data/leaderboard.json";
 
 const usersReducer = {
-    getUsers: (state: UserDataType) => {
+    getUsers: () => {
         // fetch(dataUrl)
         //     .then(res => {
         //         console.log('response: ', res);

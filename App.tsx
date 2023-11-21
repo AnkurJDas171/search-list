@@ -23,7 +23,6 @@ const App = (): JSX.Element => {
         <SafeAreaView style={styles.body}>
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-            // backgroundColor={backgroundStyle.backgroundColor}
             />
             <Home />
         </SafeAreaView>

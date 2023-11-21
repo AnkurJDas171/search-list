@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render app component 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "rgba(255, 255, 255, 1)",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+    testID="app-home-screen"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-evenly",
+          "width": "100%",
+        }
+      }
+      testID="app-search-bar"
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(243, 243, 243, 1)",
+            "borderRadius": 50,
+            "display": "flex",
+            "flexDirection": "row",
+            "paddingHorizontal": 10,
+            "width": "55%",
+          }
+        }
+        testID="RNE__Input__view-wrapper"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "alignItems": "center",
+              "borderBottomWidth": 0,
+              "borderColor": "#86939e",
+              "flexDirection": "row",
+              "transform": [
+                {
+                  "translateX": 0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "height": 40,
+                "justifyContent": "center",
+                "marginVertical": 4,
+                "paddingRight": 4,
+              }
+            }
+          >
+            <RNSVGSvgView
+              align="xMidYMid"
+              bbHeight="20"
+              bbWidth="20"
+              focusable={false}
+              height="20"
+              meetOrSlice={0}
+              minX={0}
+              minY={0}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 20,
+                    "width": 20,
+                  },
+                ]
+              }
+              vbHeight={64}
+              vbWidth={64}
+              width="20"
+              x="0px"
+              xml="
+    <svg xmlns="http://www.w3.org/2000/svg" x = "0px" y = "0px" width = "100" height = "100" viewBox = "0 0 64 64" >
+        <path d="M 24 2.8886719 C 12.365714 2.8886719 2.8886719 12.365723 2.8886719 24 C 2.8886719 35.634277 12.365714 45.111328 24 45.111328 C 29.036552 45.111328 33.664698 43.331333 37.298828 40.373047 L 52.130859 58.953125 C 52.130859 58.953125 55.379484 59.435984 57.396484 57.333984 C 59.427484 55.215984 58.951172 52.134766 58.951172 52.134766 L 40.373047 37.298828 C 43.331332 33.664697 45.111328 29.036548 45.111328 24 C 45.111328 12.365723 35.634286 2.8886719 24 2.8886719 z M 24 7.1113281 C 33.352549 7.1113281 40.888672 14.647457 40.888672 24 C 40.888672 33.352543 33.352549 40.888672 24 40.888672 C 14.647451 40.888672 7.1113281 33.352543 7.1113281 24 C 7.1113281 14.647457 14.647451 7.1113281 24 7.1113281 z" > </path>
+    </svg>
+"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGPath
+                  d="M 24 2.8886719 C 12.365714 2.8886719 2.8886719 12.365723 2.8886719 24 C 2.8886719 35.634277 12.365714 45.111328 24 45.111328 C 29.036552 45.111328 33.664698 43.331333 37.298828 40.373047 L 52.130859 58.953125 C 52.130859 58.953125 55.379484 59.435984 57.396484 57.333984 C 59.427484 55.215984 58.951172 52.134766 58.951172 52.134766 L 40.373047 37.298828 C 43.331332 33.664697 45.111328 29.036548 45.111328 24 C 45.111328 12.365723 35.634286 2.8886719 24 2.8886719 z M 24 7.1113281 C 33.352549 7.1113281 40.888672 14.647457 40.888672 24 C 40.888672 33.352543 33.352549 40.888672 24 40.888672 C 14.647451 40.888672 7.1113281 33.352543 7.1113281 24 C 7.1113281 14.647457 14.647451 7.1113281 24 7.1113281 z"
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <TextInput
+            editable={true}
+            onChangeText={[Function]}
+            placeholder="name"
+            placeholderTextColor="#86939e"
+            style={
+              {
+                "color": "#242424",
+                "flex": 1,
+                "fontSize": 18,
+                "minHeight": 40,
+              }
+            }
+            testID="app-text-input"
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+        <Text
+          style={
+            {
+              "color": "#ff190c",
+              "fontSize": 12,
+              "margin": 5,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": 2,
+            },
+            {
+              "paddingVertical": 5,
+              "width": "30%",
+            },
+            false,
+          ]
+        }
+        testID="RNE_BUTTON_WRAPPER"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": false,
+              "checked": undefined,
+              "disabled": true,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+          testID="app-button"
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "hsl(208, 8%, 90%)",
+                "borderColor": "#2089dc",
+                "borderRadius": 5,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+                "paddingHorizontal": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "hsl(208, 8%, 63%)",
+                  "fontSize": 18,
+                  "fontWeight": "bold",
+                  "paddingVertical": 1,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Search
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flex": 4,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={true}
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(0, 0, 0, 0.2)",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 10,
+            "height": "15%",
+            "justifyContent": "center",
+            "marginBottom": "20%",
+            "width": "70%",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 15,
+              "paddingHorizontal": 20,
+              "textAlign": "center",
+            }
+          }
+        />
+      </View>
+    </View>
+  </Modal>
+</RCTSafeAreaView>
+`;
