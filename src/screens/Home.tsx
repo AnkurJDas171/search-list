@@ -3,7 +3,6 @@ import { StyleSheet, View } from "react-native"
 
 import AppList from "../components/AppList";
 import SearchBar from "../components/SearchBar";
-import AppTextContainer from "../UI/AppTextContainer";
 import AppAlert from "../components/AppAlert";
 
 const Home = (): JSX.Element => {

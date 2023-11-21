@@ -10,6 +10,7 @@ const AppTextInput = ({
     handleTextChange,
     icon,
     placeholder,
+    value
 }: AppTextInputProps): JSX.Element => {
     return (
         <Input
@@ -19,6 +20,7 @@ const AppTextInput = ({
             placeholder={placeholder}
             leftIcon={icon}
             testID="app-text-input"
+            value={value}
         />
     )
 }

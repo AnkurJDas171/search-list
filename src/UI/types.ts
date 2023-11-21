@@ -14,5 +14,6 @@ export type AppTextContrainerProps = {
 export type AppTextInputProps = {
     handleTextChange: (arg: string) => void,
     icon: Element,
-    placeholder: string
+    placeholder: string,
+    value: string
 }

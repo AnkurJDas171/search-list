@@ -7,17 +7,15 @@ import colors from "../assets/colors";
 
 const AppListTitle = (): JSX.Element => {
     return (
-        <>
-            <View style={styles.body}>
-                {LIST_TITLES.map((item: string) =>
-                    <AppTextContainer
-                        title={item}
-                        textColor={colors.WHITE}
-                        key={item}
-                    />
-                )}
-            </View>
-        </>
+        <View style={styles.body}>
+            {LIST_TITLES.map((item: string) =>
+                <AppTextContainer
+                    title={item}
+                    textColor={colors.WHITE}
+                    key={item}
+                />
+            )}
+        </View>
     )
 }
 

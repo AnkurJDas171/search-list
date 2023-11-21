@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search bar buttton should render button 1`] = `
+<View
+  style={
+    [
+      {
+        "overflow": "hidden",
+      },
+      {
+        "borderRadius": 2,
+      },
+      {
+        "paddingVertical": 5,
+        "width": "30%",
+      },
+      false,
+    ]
+  }
+  testID="RNE_BUTTON_WRAPPER"
+>
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": false,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="app-button"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "hsl(208, 8%, 90%)",
+          "borderColor": "#2089dc",
+          "borderRadius": 5,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "padding": 8,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "hsl(208, 8%, 63%)",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "paddingVertical": 1,
+            "textAlign": "center",
+          }
+        }
+      >
+        Search
+      </Text>
+    </View>
+  </View>
+</View>
+`;

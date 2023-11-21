@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Item should render list item data 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      },
+      {
+        "backgroundColor": "#eee",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "width": "25%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0)",
+          "borderColor": "#bcbbc1",
+          "flexDirection": "row",
+          "padding": 14,
+        }
+      }
+      testID="RNE__LISTITEM__padView"
+    >
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "backgroundColor": "transparent",
+            "color": "#000",
+            "fontSize": 12,
+            "textAlign": "left",
+          }
+        }
+        testID="app-text-container"
+      >
+        Chris Buckley
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "width": "25%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0)",
+          "borderColor": "#bcbbc1",
+          "flexDirection": "row",
+          "padding": 14,
+        }
+      }
+      testID="RNE__LISTITEM__padView"
+    >
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "backgroundColor": "transparent",
+            "color": "#000",
+            "fontSize": 12,
+            "textAlign": "left",
+          }
+        }
+        testID="app-text-container"
+      >
+        1
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "width": "25%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0)",
+          "borderColor": "#bcbbc1",
+          "flexDirection": "row",
+          "padding": 14,
+        }
+      }
+      testID="RNE__LISTITEM__padView"
+    >
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "backgroundColor": "transparent",
+            "color": "#000",
+            "fontSize": 12,
+            "textAlign": "left",
+          }
+        }
+        testID="app-text-container"
+      >
+        36750
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "width": "25%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(255, 255, 255, 0)",
+          "borderColor": "#bcbbc1",
+          "flexDirection": "row",
+          "padding": 14,
+        }
+      }
+      testID="RNE__LISTITEM__padView"
+    >
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "backgroundColor": "transparent",
+            "color": "#000",
+            "fontSize": 12,
+            "textAlign": "left",
+          }
+        }
+        testID="app-text-container"
+      >
+        false
+      </Text>
+    </View>
+  </View>
+</View>
+`;

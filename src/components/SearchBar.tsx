@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { StyleSheet, View } from "react-native";
 
 import AppTextInput from "../UI/AppTextInput";
@@ -13,18 +13,20 @@ const SearchBar = (): JSX.Element => {
     }
 
     return (
-        <>
-            <View style={styles.body}>
-                <AppTextInput
-                    handleTextChange={handleChange}
-                    icon={<SearchIcon height="20" width="20" />}
-                    placeholder="name"
-                />
-                <SearchBarButton
-                    searchedName={text}
-                />
-            </View>
-        </>
+        <View 
+            style={styles.body}
+            testID="app-search-bar"
+        >
+            <AppTextInput
+                handleTextChange={handleChange}
+                icon={<SearchIcon height="20" width="20" />}
+                placeholder="name"
+                value={text}
+            />
+            <SearchBarButton
+                searchedName={text}
+            />
+        </View>
     )
 }
 

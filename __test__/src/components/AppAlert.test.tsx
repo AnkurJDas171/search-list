@@ -1,5 +1,6 @@
-import { render } from "@testing-library/react-native";
 import React from "react";
+import { render } from "@testing-library/react-native";
+
 import AppAlert from "../../../src/components/AppAlert";
 import * as hooks from "../../../src/hooks";
 
@@ -20,8 +21,10 @@ describe('Alert component', () => {
         })
 
         const screen = render(<AppAlert />)
+        const text = screen.getByText('alert test')
 
         expect(screen.toJSON()).toMatchSnapshot();
+        expect(text).toBeTruthy();
     });
 
     it("should not render Alert is showAlert state is false", () => {
@@ -30,8 +33,9 @@ describe('Alert component', () => {
             alertText: 'alert test'
         });
 
-        const screen = render(<AppAlert />)
+        const screen: any = render(<AppAlert />)
 
         expect(screen.toJSON()).toMatchSnapshot();
+        expect(screen.toJSON().children).toBeNull()
     });
 })
