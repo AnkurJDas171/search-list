@@ -25,17 +25,17 @@ const AppList = (): JSX.Element => {
         />
     }
 
-    if(!list) return <></>
-
     return (
         <View style={styles.body}>
-            <AppListTitle />
-            <FlatList
-                data={list}
-                keyExtractor={item => item.uid}
-                renderItem={renderItem}
-                style={styles.listContainer}
-            />
+            {list?.length && <>
+                <AppListTitle />
+                <FlatList
+                    data={list}
+                    keyExtractor={item => item.uid}
+                    renderItem={renderItem}
+                    style={styles.listContainer}
+                />
+            </>}
         </View>
     )
 }

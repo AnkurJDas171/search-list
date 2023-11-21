@@ -20,12 +20,12 @@ const App = (): JSX.Element => {
     }, [])
 
     return (
-        <SafeAreaView >
+        <SafeAreaView style={styles.body}>
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
             // backgroundColor={backgroundStyle.backgroundColor}
             />
-            {/* <Home /> */}
+            <Home />
         </SafeAreaView>
     );
 }
