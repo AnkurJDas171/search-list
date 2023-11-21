@@ -1,5 +1,5 @@
 import { ListType } from "./type";
 
-const initialListState: ListType = null
+const initialListState: ListType = []
 
 export default initialListState;

@@ -9,7 +9,7 @@ jest.mock("../../../src/hooks", () => ({
 }))
 
 describe('Alert component', () => {
-    beforeEach(()=>{
+    beforeEach(() => {
         jest.resetAllMocks();
     })
 
@@ -19,9 +19,7 @@ describe('Alert component', () => {
             alertText: 'alert test'
         })
 
-        const screen = render(
-            <AppAlert />
-        )
+        const screen = render(<AppAlert />)
 
         expect(screen.toJSON()).toMatchSnapshot();
     });
@@ -32,9 +30,7 @@ describe('Alert component', () => {
             alertText: 'alert test'
         });
 
-        const screen = render(
-            <AppAlert />
-        )
+        const screen = render(<AppAlert />)
 
         expect(screen.toJSON()).toMatchSnapshot();
     });

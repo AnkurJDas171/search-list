@@ -50,7 +50,7 @@ const listReducer = {
         }
     },
     clearList: () => {
-        return null;
+        return [];
     }
 }
 

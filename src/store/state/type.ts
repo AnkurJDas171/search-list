@@ -26,4 +26,4 @@ export type AlertType = {
 
 export type UserDataType = { [key: string]: UserType } | null;
 
-export type ListType = ListItemData[] | null;
+export type ListType = ListItemData[] | [];
