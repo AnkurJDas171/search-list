@@ -1,12 +1,12 @@
 ### Setup the project
 
-**Android**
+**1. Android**
 ```
 npm i
 npm run android
 ```
 
-**iOS**
+**2. iOS**
 
 ```
 npm i
