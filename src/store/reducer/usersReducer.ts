@@ -1,28 +1,9 @@
-import * as userData from "../../assets/data/leaderboard.json";
+import { PayloadAction } from "@reduxjs/toolkit";
+import { UserDataType } from "../state/type";
 
 const usersReducer = {
-    getUsers: () => {
-        // fetch(dataUrl)
-        //     .then(res => {
-        //         console.log('response: ', res);
-        //         res.json()})
-        //     // .then((data: UserDataType) => {
-        //     //     console.log('data fetch success: ', data);
-
-        //     //     state = {
-        //     //         ...state,
-        //     //         users: data
-        //     //     };
-        //     // })
-        //     .catch(err => {
-        //         console.log('error while fetching data: ', err)
-        //     })
-        // const newState = {
-        //     ...state,
-        //     users: userData
-        // }
-
-        return userData
+    getUsers: (_: UserDataType, action: PayloadAction<UserDataType>) => {
+        return action.payload;
     }
 }
 

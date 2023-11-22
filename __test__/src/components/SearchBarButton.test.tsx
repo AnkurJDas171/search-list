@@ -3,9 +3,9 @@ import { fireEvent, render } from "@testing-library/react-native";
 
 import SearchBarButton from "../../../src/components/SearchBarButton";
 import mockUsersdata from "../../__mock__/data/UsersData";
-import * as hooks from "../../../src/hooks";
+import * as hooks from "../../../src/hooks/reduxHooks";
 
-jest.mock("../../../src/hooks", () => ({
+jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(() => () => {}), 
     useAppSelector: jest.fn()
 }))

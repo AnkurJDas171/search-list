@@ -7,7 +7,7 @@ import AppListTitle from "./AppListTitle";
 import colors from "../assets/colors";
 import { ListType } from "../store/state/type";
 import { RootState } from "../store";
-import { useAppSelector } from "../hooks";
+import { useAppSelector } from "../hooks/reduxHooks";
 
 const AppList = (): JSX.Element => {
     const list = useAppSelector((state: RootState): ListType => state.list);

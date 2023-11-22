@@ -1,9 +1,20 @@
 import alertReducer from "../../../../src/store/reducer/alertReducer"
 import { ALERT_MESSAGE } from "../../../../src/assets/Constants";
+import { AlertType } from "../../../../src/store/state/type";
 
 describe("Alert reducer", () => {
     it("setAlert should return an object containing showAlert as true and alertText message", ()=> {
-        const result = alertReducer.setAlert();
+        const initialState = {
+            showAlert: false,
+            alertText: ""
+        }
+        
+        const action = {
+            payload: ALERT_MESSAGE,
+            type: 'alert'
+        }
+
+        const result = alertReducer.setAlert(initialState, action);
 
         expect(result.showAlert).toBe(true);
         expect(result.alertText).toBe(ALERT_MESSAGE);

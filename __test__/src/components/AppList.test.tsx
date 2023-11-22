@@ -3,11 +3,11 @@ import { render } from "@testing-library/react-native";
 
 import mockLIstData from "../../__mock__/data/ListData";
 import AppList from "../../../src/components/AppList";
-import * as hooks from "../../../src/hooks";
+import * as hooks from "../../../src/hooks/reduxHooks";
 import { ReactTestInstance } from "react-test-renderer";
 import { ListItemData } from "../../../src/store/state/type";
 
-jest.mock("../../../src/hooks", () => ({
+jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(),
     useAppSelector: jest.fn(),
 }))

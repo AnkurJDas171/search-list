@@ -1,10 +1,11 @@
-import { ALERT_MESSAGE } from "../../assets/Constants";
+import { PayloadAction } from "@reduxjs/toolkit";
+import { AlertType } from "../state/type";
 
 const alertReducer = {
-    setAlert: () => {
+    setAlert: (_: AlertType, action: PayloadAction<string>) => {
         return {
             showAlert: true,
-            alertText: ALERT_MESSAGE
+            alertText: action.payload
         }
     },
     resetAlert: () => {

@@ -1,10 +1,10 @@
 import React from "react";
-import { act, fireEvent, render, waitFor } from "@testing-library/react-native";
+import { act, fireEvent, render } from "@testing-library/react-native";
 
 import SearchBar from "../../../src/components/SearchBar";
 import { waitAMoment } from "../../__mock__/utils";
 
-jest.mock("../../../src/hooks", () => ({
+jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(() => () => { }),
     useAppSelector: jest.fn()
 }))

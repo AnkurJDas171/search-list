@@ -2,9 +2,9 @@ import React from "react";
 import { render } from "@testing-library/react-native";
 
 import AppAlert from "../../../src/components/AppAlert";
-import * as hooks from "../../../src/hooks";
+import * as hooks from "../../../src/hooks/reduxHooks";
 
-jest.mock("../../../src/hooks", () => ({
+jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(),
     useAppSelector: jest.fn(),
 }))

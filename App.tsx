@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
     SafeAreaView,
     StatusBar,
@@ -7,17 +7,12 @@ import {
 } from 'react-native';
 
 import Home from './src/screens/Home';
-import { getUsers } from './src/store/slice/users.slice';
-import { useAppDispatch } from './src/hooks';
 import colors from './src/assets/colors';
+import useDataFetch from './src/hooks/dataFetchHook';
 
 const App = (): JSX.Element => {
     const isDarkMode = useColorScheme() === 'dark';
-    const dispatch = useAppDispatch();
-
-    useEffect(() => {
-        dispatch(getUsers());
-    }, [])
+    useDataFetch();
 
     return (
         <SafeAreaView style={styles.body}>

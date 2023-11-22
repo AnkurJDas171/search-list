@@ -2,16 +2,10 @@ import { PayloadAction } from "@reduxjs/toolkit";
 import { LIST_LENGTH } from "../../assets/Constants";
 import { GetListActionType } from "../action";
 import { ListItemData, ListType } from "../state/type";
-
-const isStringPresent = (str: string, subStr: string): boolean => {
-    if(!str) return false;
-
-    return str.toLocaleLowerCase()
-        .includes(subStr.toLocaleLowerCase());
-}
+import { isStringPresent } from "../../utils";
 
 const listReducer = {
-    getList: (state: ListType, action: PayloadAction<GetListActionType>) => {
+    getList: (_: ListType, action: PayloadAction<GetListActionType>) => {
         const { users, searchedName } = action.payload;
 
         if (users !== null) {

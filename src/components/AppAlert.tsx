@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Animated, Modal, StyleSheet, Text, View } from "react-native";
 
 import colors from "../assets/colors";
-import { useAppDispatch, useAppSelector } from "../hooks";
+import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { RootState } from "../store";
 import { AlertType } from "../store/state/type";
 import { resetAlert } from "../store/slice/alert.slice";

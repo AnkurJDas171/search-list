@@ -3,12 +3,13 @@ import React from "react";
 import AppButton from "../UI/AppButton";
 import colors from "../assets/colors";
 import { isUserPresent } from "../utils";
-import { useAppDispatch, useAppSelector } from "../hooks";
+import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { RootState } from "../store";
 import { UserDataType } from "../store/state/type";
 import { clearList, getList } from "../store/slice/list.slice";
 import { setAlert } from "../store/slice/alert.slice";
 import { SearchBarButtonType } from "./types";
+import { ALERT_MESSAGE } from "../assets/Constants";
 
 const SearchBarButton = ({
     searchedName
@@ -25,7 +26,7 @@ const SearchBarButton = ({
             dispatch(getList(action))
         } else {
             dispatch(clearList());
-            dispatch(setAlert());
+            dispatch(setAlert(ALERT_MESSAGE));
         }
     }
 
