@@ -1,12 +1,14 @@
 import { LIST_LENGTH } from "../../../../src/assets/Constants";
 import listReducer from "../../../../src/store/reducer/listReducer"
 import { ListItemData, ListState } from "../../../../src/store/state/type"
+import mockLIstData, { expectedLowestRankValues, expectedSortedValues } from "../../../__mock__/data/ListData";
 import mockUsersdata from "../../../__mock__/data/UsersData"
+import { compareObjectData } from "../../../__mock__/utils";
 
 const positionOfTheUser = (name: string, list: ListState | undefined): number => {
     let position = 0;
     list?.forEach((item: ListItemData, index: number): void => {
-        if(item.name.includes(name)){
+        if (item.name.includes(name)) {
             position = index + 1;
             return;
         }
@@ -47,5 +49,31 @@ describe("List reducer", () => {
 
         expect(result).not.toBe(0);
         expect(result).toBe(LIST_LENGTH);
+    })
+
+    it("getListFromLowestRank should return lowest ten users based on rank", () => {
+        const action = {
+            payload: mockUsersdata,
+            type: "list"
+        }
+
+        const list = listReducer.getListFromLowestRank([], action);
+
+        for (let i = 0; i < list.length; i++) {
+            const isMatched = compareObjectData(expectedLowestRankValues[i], list[i])
+            
+            expect(isMatched).toBe(true);
+        }
+    })
+
+    it("sortList should sort the list alphabetically", () => {
+        const state = mockLIstData;
+        const list  = listReducer.sortList(state);
+
+        for (let i = 0; i < list.length; i++) {
+            const isMatched = compareObjectData(expectedSortedValues[i], list[i])
+            
+            expect(isMatched).toBe(true);
+        }
     })
 })
