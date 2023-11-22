@@ -8,7 +8,21 @@ export const LIST_TITLES = [
     'No. of bananas',
     'isSearchedUser?'
 ];
-
 export const LIST_LENGTH = 10;
+
+export const buttonTitles = {
+    SEARCH: "Search",
+    SHOW_LOWEST_RANKS: "Show lowest ranks",
+    SORT_NAMES: "Sort names"
+};
+
+export const testID = {
+    APP_BUTTON: "app-button",
+    APP_LIST: "app-list",
+    APP_HOME_SCREEN: "app-home-screen",
+    APP_SEARCH_BAR: "app-search-bar",
+    APP_TEXT_CONTAINER: "app-text-container",
+    APP_TEXT_INPUT: "app-text-input"
+}
 
 export const dataUrl = "https://raw.githubusercontent.com/AnkurJDas171/DATA/main/leaderboard.json";

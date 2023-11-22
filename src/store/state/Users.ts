@@ -1,5 +1,5 @@
-import { UserDataType } from "./type";
+import { UserState } from "./type";
 
-const initialUsersState: UserDataType = null;
+const initialUsersState: UserState = [];
 
 export default initialUsersState;

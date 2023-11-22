@@ -1,6 +1,5 @@
 import alertReducer from "../../../../src/store/reducer/alertReducer"
 import { ALERT_MESSAGE } from "../../../../src/assets/Constants";
-import { AlertType } from "../../../../src/store/state/type";
 
 describe("Alert reducer", () => {
     it("setAlert should return an object containing showAlert as true and alertText message", ()=> {

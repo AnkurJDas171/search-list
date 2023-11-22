@@ -27,7 +27,7 @@ describe('Alert component', () => {
         expect(text).toBeTruthy();
     });
 
-    it("should not render Alert is showAlert state is false", () => {
+    it("should not render Alert when showAlert state is false", () => {
         jest.spyOn(hooks, 'useAppSelector').mockReturnValue({
             showAlert: false,
             alertText: 'alert test'
@@ -36,6 +36,6 @@ describe('Alert component', () => {
         const screen: any = render(<AppAlert />)
 
         expect(screen.toJSON()).toMatchSnapshot();
-        expect(screen.toJSON().children).toBeNull()
+        expect(screen.toJSON().children).toBeNull();
     });
 })

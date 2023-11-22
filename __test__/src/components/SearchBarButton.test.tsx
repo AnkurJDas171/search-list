@@ -4,6 +4,7 @@ import { fireEvent, render } from "@testing-library/react-native";
 import SearchBarButton from "../../../src/components/SearchBarButton";
 import mockUsersdata from "../../__mock__/data/UsersData";
 import * as hooks from "../../../src/hooks/reduxHooks";
+import { testID } from "../../../src/assets/Constants";
 
 jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(() => () => {}), 
@@ -32,7 +33,7 @@ describe("Search bar buttton", () => {
                 searchedName={"testName"}
             />
         )
-        const button = await screen.findByTestId("app-button");
+        const button = await screen.findByTestId(testID.APP_BUTTON);
         
         fireEvent.press(button);
 

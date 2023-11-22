@@ -8,13 +8,12 @@ import colors from "../assets/colors";
 const AppListItem = ({
     data,
     containerColor,
-    rank,
     textColor = colors.BLACK
 }: AppListItemProps): JSX.Element => {
     return (
         <View style={[styles.body, { backgroundColor: containerColor }]}>
             <AppTextContainer title={data.name} textColor={textColor} />
-            <AppTextContainer title={rank} textColor={textColor} />
+            <AppTextContainer title={data.rank} textColor={textColor} />
             <AppTextContainer title={data.bananas} textColor={textColor} />
             <AppTextContainer title={data.isSearched} textColor={textColor} />
         </View>

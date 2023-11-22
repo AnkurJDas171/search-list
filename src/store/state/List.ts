@@ -1,5 +1,5 @@
-import { ListType } from "./type";
+import { ListState } from "./type";
 
-const initialListState: ListType = []
+const initialListState: ListState = []
 
 export default initialListState;

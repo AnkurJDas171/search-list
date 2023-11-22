@@ -1,30 +1,23 @@
+type data = {
+    bananas: number,
+    lastDayPlayed: string,
+    longestStreak: number,
+    name: string,
+    stars: number,
+    subscribed: boolean,
+    uid: string,
+    isSearched?: boolean,
+    rank?: number
+}
+
 export type AppListRenderItem = {
-    item:{
-        bananas: number,
-        lastDayPlayed?: string,
-        longestStreak?: number,
-        name: string,
-        stars: number,
-        subscribed?: boolean,
-        uid: string,
-        isSearched: boolean
-    },
+    item: data,
     index: number
 }
 
 export type AppListItemProps = {
-    data: {
-        bananas: number,
-        lastDayPlayed?: string,
-        longestStreak?: number,
-        name: string,
-        stars: number,
-        subscribed?: boolean,
-        uid: string,
-        isSearched: boolean
-    },
+    data: data,
     containerColor: string,
-    rank: number,
     textColor?: string,
 }
 

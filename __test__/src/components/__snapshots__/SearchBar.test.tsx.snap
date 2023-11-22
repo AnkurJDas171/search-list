@@ -145,10 +145,13 @@ exports[`Search bar component should be able to change text in search bar 1`] = 
         {
           "borderRadius": 2,
         },
-        {
-          "paddingVertical": 5,
-          "width": "30%",
-        },
+        [
+          {
+            "paddingVertical": 5,
+            "width": "30%",
+          },
+          undefined,
+        ],
         false,
       ]
     }
@@ -369,10 +372,13 @@ exports[`Search bar component should render search bar 1`] = `
         {
           "borderRadius": 2,
         },
-        {
-          "paddingVertical": 5,
-          "width": "30%",
-        },
+        [
+          {
+            "paddingVertical": 5,
+            "width": "30%",
+          },
+          undefined,
+        ],
         false,
       ]
     }

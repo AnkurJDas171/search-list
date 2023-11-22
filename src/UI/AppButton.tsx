@@ -6,6 +6,7 @@ import { AppButtonProps } from "./types";
 
 const AppButton = ({
     color,
+    containerStyle,
     handlePress,
     isDisable,
     title,
@@ -16,7 +17,7 @@ const AppButton = ({
             title={title}
             buttonStyle={[styles.button, { backgroundColor: color }]}
             titleStyle={[styles.title, { color: titleColor }]}
-            containerStyle={styles.container}
+            containerStyle={[styles.container, containerStyle]}
             onPress={handlePress}
             disabled={isDisable}
             testID="app-button"

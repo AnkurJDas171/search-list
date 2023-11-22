@@ -1,6 +1,6 @@
-import { UserDataType } from "../state/type"
+import { UserState } from "../state/type"
 
 export type GetListActionType = {
-    users: UserDataType,
+    users: UserState,
     searchedName: string
 }

@@ -5,15 +5,15 @@ const userDataKey = "00D1LA8puAa1GINkVpfgC1TmO0m1";
 
 describe("isUserPresent", () => {
     it("should return true when searched user name is present in the users data ", () => {
-        const searchedUsed = "Rica";
-        const result = isUserPresent(searchedUsed ,mockUsersdata);
+        const searchedUsed = "Chris Buckley";
+        const result = isUserPresent(searchedUsed, mockUsersdata);
 
         expect(result).toBe(true);
     })
 
     it("should return false when searched user name is not present in the users data ", () => {
         const searchedUsed = "Hello";
-        const result = isUserPresent(searchedUsed ,mockUsersdata);
+        const result = isUserPresent(searchedUsed, mockUsersdata);
 
         expect(result).toBe(false);
     })
@@ -21,16 +21,16 @@ describe("isUserPresent", () => {
 
 describe("isStringPresent", () => {
     it("should return true when searched user name matches the user name ", () => {
-        const searchedUsed = "Rica ella francisco";
-        const name = mockUsersdata !== null ? mockUsersdata[userDataKey].name : "";
+        const searchedUsed = "Chris Buckley";
+        const name = mockUsersdata[0].name;
         const result = isStringPresent(name, searchedUsed);
 
         expect(result).toBe(true);
     })
 
     it("should return true when searched user name partially matches the user name ", () => {
-        const searchedUsed = "Rica";
-        const name = mockUsersdata !== null ? mockUsersdata[userDataKey].name : "";
+        const searchedUsed = "Chris";
+        const name = mockUsersdata[0].name;
         const result = isStringPresent(name, searchedUsed);
 
         expect(result).toBe(true);
@@ -38,7 +38,7 @@ describe("isStringPresent", () => {
 
     it("should return false when searched user name doesn't match the user name ", () => {
         const searchedUsed = "Hello";
-        const name = mockUsersdata !== null ? mockUsersdata[userDataKey].name : "";
+        const name = mockUsersdata[0].name;
         const result = isStringPresent(name, searchedUsed);
 
         expect(result).toBe(false);

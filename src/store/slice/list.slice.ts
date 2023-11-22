@@ -10,7 +10,7 @@ const listSlice = createSlice({
     reducers: listReducer
 });
 
-export const { clearList, getList } = listSlice.actions;
+export const { clearList, getList, getListFromLowestRank, sortList } = listSlice.actions;
 
 export const selectCount = (state: RootState) => state.list;
 

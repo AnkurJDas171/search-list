@@ -1,9 +1,9 @@
 import React from "react";
-import { act, fireEvent, render } from "@testing-library/react-native";
+import { fireEvent, render } from "@testing-library/react-native";
 
 import AppTextInput from "../../../src/UI/AppTextInput";
 import SearchIcon from "../../../src/assets/icons/Search";
-import { waitAMoment } from "../../__mock__/utils";
+import { testID } from "../../../src/assets/Constants";
 
 describe("Text Input", () => {
     it("should render text input", async () => {
@@ -17,7 +17,7 @@ describe("Text Input", () => {
                 value={"sample text"}
             />
         )
-        const textInput = await screen.findByTestId("app-text-input");
+        const textInput = await screen.findByTestId(testID.APP_TEXT_INPUT);
 
         expect(screen.toJSON()).toMatchSnapshot();
         expect(textInput).toBeTruthy();
@@ -39,7 +39,7 @@ describe("Text Input", () => {
                 value={"sample text"}
             />
         );
-        const textInput = await screen.findByTestId("app-text-input");
+        const textInput = await screen.findByTestId(testID.APP_TEXT_INPUT);
 
         fireEvent.changeText(textInput, "new sample text");
 

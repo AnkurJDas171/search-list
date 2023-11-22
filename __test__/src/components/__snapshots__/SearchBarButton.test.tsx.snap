@@ -10,10 +10,13 @@ exports[`Search bar buttton should render button 1`] = `
       {
         "borderRadius": 2,
       },
-      {
-        "paddingVertical": 5,
-        "width": "30%",
-      },
+      [
+        {
+          "paddingVertical": 5,
+          "width": "30%",
+        },
+        undefined,
+      ],
       false,
     ]
   }

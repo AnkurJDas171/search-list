@@ -10,6 +10,16 @@ exports[`Alert component should not render Alert is showAlert state is false 1`]
 />
 `;
 
+exports[`Alert component should not render Alert when showAlert state is false 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  transparent={true}
+  visible={false}
+/>
+`;
+
 exports[`Alert component should render Alert when showAlert state is true 1`] = `
 <Modal
   animationType="fade"

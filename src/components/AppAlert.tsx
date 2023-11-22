@@ -4,13 +4,13 @@ import { Animated, Modal, StyleSheet, Text, View } from "react-native";
 import colors from "../assets/colors";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { RootState } from "../store";
-import { AlertType } from "../store/state/type";
+import { AlertState } from "../store/state/type";
 import { resetAlert } from "../store/slice/alert.slice";
 import { ALERT_VISIBLE_TIME } from "../assets/Constants";
 
 const AppAlert = (): JSX.Element => {
     const dispatch = useAppDispatch();
-    const alertState = useAppSelector((state: RootState): AlertType => state.alert)
+    const alertState = useAppSelector((state: RootState): AlertState => state.alert)
     const { showAlert, alertText } = alertState;
 
     const handleRequestClose = () => {

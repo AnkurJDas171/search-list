@@ -7,7 +7,8 @@ const mockLIstData = [
         "stars": 176,
         "subscribed": true,
         "uid": "zJsI8m74uqOI3el3EM1u64kbUWd2",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 1
     },
     {
         "bananas": 27800,
@@ -17,7 +18,8 @@ const mockLIstData = [
         "stars": 104,
         "subscribed": true,
         "uid": "zOztg0xHJwN2GSHO9XSFAPvTl7E2",
-        "isSearched": true
+        "isSearched": true,
+        "rank": 2
     },
     {
         "bananas": 19500,
@@ -27,7 +29,8 @@ const mockLIstData = [
         "stars": 92,
         "subscribed": true,
         "uid": "zQH10NTZfYaXACdiF3V6hd7Ahn93",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 3
     },
     {
         "bananas": 18250,
@@ -37,7 +40,8 @@ const mockLIstData = [
         "stars": 66,
         "subscribed": true,
         "uid": "zBgGPzU0saQuZHL7EH3T8xX6zCm2",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 4
     },
     {
         "bananas": 17200,
@@ -47,7 +51,8 @@ const mockLIstData = [
         "stars": 35,
         "subscribed": true,
         "uid": "zyqWz9Obwsfk9TIkDAoNshMGPtc2",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 5
     },
     {
         "bananas": 14300,
@@ -57,7 +62,8 @@ const mockLIstData = [
         "stars": 64,
         "subscribed": false,
         "uid": "znHBpuZTcVhC5DpMtSAYLGtWo023",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 6
     },
     {
         "bananas": 11250,
@@ -67,7 +73,8 @@ const mockLIstData = [
         "stars": 53,
         "subscribed": true,
         "uid": "zOCMOcl3dKfgnJFvaS1Tk9Ifq3A3",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 7
     },
     {
         "bananas": 8300,
@@ -77,17 +84,19 @@ const mockLIstData = [
         "stars": 34,
         "subscribed": true,
         "uid": "zRa6fy2hvtYWXkKI3jKoASOqmd32",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 8
     },
     {
         "bananas": 6550,
         "lastDayPlayed": "2018-09-18",
         "longestStreak": 6,
-        "name": "Emma", "stars"
-            : 24, "subscribed"
-            : false, "uid"
-            : "zDHhDho9h5fTDntQhyEg66RMvqK2", "isSearched"
-            : false
+        "name": "Emma",
+        "stars": 24,
+        "subscribed": false,
+        "uid": "zDHhDho9h5fTDntQhyEg66RMvqK2",
+        "isSearched": false,
+        "rank": 9
     },
     {
         "bananas": 6200,
@@ -97,7 +106,8 @@ const mockLIstData = [
         "stars": 26,
         "subscribed": true,
         "uid": "zOKzuWGBUVWRrTxyEHgTKc4gin32",
-        "isSearched": false
+        "isSearched": false,
+        "rank": 10
     }
 ]
 

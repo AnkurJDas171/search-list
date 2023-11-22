@@ -6,6 +6,7 @@ import AppList from "../../../src/components/AppList";
 import * as hooks from "../../../src/hooks/reduxHooks";
 import { ReactTestInstance } from "react-test-renderer";
 import { ListItemData } from "../../../src/store/state/type";
+import { testID } from "../../../src/assets/Constants";
 
 jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(),
@@ -21,7 +22,7 @@ describe("List component", () => {
         jest.spyOn(hooks, 'useAppSelector').mockReturnValue(mockLIstData);
 
         const screen = render(<AppList/>);
-        const list = await screen.findByTestId("app-list");
+        const list = await screen.findByTestId(testID.APP_LIST);
         
         expect(list).toBeTruthy()
 

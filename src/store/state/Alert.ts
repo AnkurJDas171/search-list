@@ -1,6 +1,6 @@
-import { AlertType } from "./type";
+import { AlertState } from "./type";
 
-const initialAlertState: AlertType = {
+const initialAlertState: AlertState = {
     showAlert: false,
     alertText: ""
 }

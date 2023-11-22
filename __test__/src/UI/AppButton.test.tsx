@@ -2,6 +2,7 @@ import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 
 import AppButton from "../../../src/UI/AppButton"
+import { testID } from "../../../src/assets/Constants";
 
 describe('App button', () => {
     it('should render button', async () => {
@@ -17,7 +18,7 @@ describe('App button', () => {
 
         expect(screen.toJSON()).toMatchSnapshot();
 
-        const button = await screen.findByTestId("app-button");
+        const button = await screen.findByTestId(testID.APP_BUTTON);
         expect(button).not.toBeNull();
     });
 
@@ -37,7 +38,7 @@ describe('App button', () => {
             />
         );
 
-        const button = await screen.findByTestId("app-button");
+        const button = await screen.findByTestId(testID.APP_BUTTON);
         fireEvent.press(button);
 
         await expect(console.log).toHaveBeenCalledWith("app button pressed");

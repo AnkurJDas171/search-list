@@ -5,7 +5,7 @@ import colors from "../assets/colors";
 import { isUserPresent } from "../utils";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { RootState } from "../store";
-import { UserDataType } from "../store/state/type";
+import { UserState } from "../store/state/type";
 import { clearList, getList } from "../store/slice/list.slice";
 import { setAlert } from "../store/slice/alert.slice";
 import { SearchBarButtonType } from "./types";
@@ -14,7 +14,7 @@ import { ALERT_MESSAGE } from "../assets/Constants";
 const SearchBarButton = ({
     searchedName
 }: SearchBarButtonType): JSX.Element => {
-    const users = useAppSelector((state: RootState): UserDataType => state.users);
+    const users = useAppSelector((state: RootState): UserState => state.users);
     const dispatch = useAppDispatch();
 
     const handlePress = (): void => {

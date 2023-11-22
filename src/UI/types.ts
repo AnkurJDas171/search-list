@@ -1,5 +1,8 @@
+import { StyleProp, ViewStyle } from "react-native"
+
 export type AppButtonProps = {
     color: string,
+    containerStyle?: StyleProp<ViewStyle>
     handlePress: () => void,
     isDisable: boolean,
     title: string,

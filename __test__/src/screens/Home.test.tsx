@@ -3,6 +3,7 @@ import { render } from "@testing-library/react-native";
 
 import Home from "../../../src/screens/Home";
 import * as hooks from "../../../src/hooks/reduxHooks";
+import { testID } from "../../../src/assets/Constants";
 
 jest.mock("../../../src/hooks/reduxHooks", () => ({
     useAppDispatch: jest.fn(() => () => { }),
@@ -18,7 +19,7 @@ describe("Home component", () => {
         jest.spyOn(hooks, 'useAppSelector').mockReturnValue([]);
 
         const screen = render(<Home />);
-        const screenComponent = await screen.findByTestId("app-home-screen");
+        const screenComponent = await screen.findByTestId(testID.APP_HOME_SCREEN);
 
         expect(screen.toJSON()).toMatchSnapshot();
         expect(screenComponent).toBeTruthy();

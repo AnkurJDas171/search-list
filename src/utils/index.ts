@@ -1,4 +1,4 @@
-import { UserDataType } from "../store/state/type";
+import { UserDataType, UserState, UserType } from "../store/state/type";
 
 const createPairCombination = (str: string): string[] => {
     const pair = [];
@@ -33,12 +33,12 @@ export const isStringPresent = (name: string, searchedName: string): boolean => 
     return isPreset;
 }
 
-export const isUserPresent = (user: string, users: UserDataType): boolean => {
+export const isUserPresent = (searchedName: string, users: UserState): boolean => {
     let userPresent = false;
-    if (users === null || !user) return userPresent;
+    if (users.length === 0 || !searchedName) return userPresent;
 
-    Object.keys(users).forEach((key: string) => {
-        if (users[key].name && isStringPresent(users[key].name, user)) {
+    users.forEach((user: UserType) => {
+        if (user.name && isStringPresent(user.name.toLocaleLowerCase(), searchedName.toLocaleLowerCase())) {
             userPresent = true;
             return;
         }

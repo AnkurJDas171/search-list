@@ -1,9 +1,9 @@
 import { LIST_LENGTH } from "../../../../src/assets/Constants";
 import listReducer from "../../../../src/store/reducer/listReducer"
-import { ListItemData, ListType } from "../../../../src/store/state/type"
+import { ListItemData, ListState } from "../../../../src/store/state/type"
 import mockUsersdata from "../../../__mock__/data/UsersData"
 
-const positionOfTheUser = (name: string, list: ListType | undefined): number => {
+const positionOfTheUser = (name: string, list: ListState | undefined): number => {
     let position = 0;
     list?.forEach((item: ListItemData, index: number): void => {
         if(item.name.includes(name)){
@@ -17,7 +17,7 @@ const positionOfTheUser = (name: string, list: ListType | undefined): number => 
 
 describe("List reducer", () => {
     it("getList should return a list conatining the searched user in within the top ten position", () => {
-        const name = "laila";
+        const name = "Wolfgang";
         const action = {
             payload: {
                 users: mockUsersdata,
@@ -34,7 +34,7 @@ describe("List reducer", () => {
 
 
     it("getList should return a list conatining the searched user not present in top ten position moved to tenth position", () => {
-        const name = "Jayne"
+        const name = "Safwan"
         const action = {
             payload: {
                 users: mockUsersdata,

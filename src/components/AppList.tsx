@@ -5,12 +5,12 @@ import AppListItem from "./AppListItem";
 import { AppListRenderItem } from "./types";
 import AppListTitle from "./AppListTitle";
 import colors from "../assets/colors";
-import { ListType } from "../store/state/type";
+import { ListState } from "../store/state/type";
 import { RootState } from "../store";
 import { useAppSelector } from "../hooks/reduxHooks";
 
 const AppList = (): JSX.Element => {
-    const list = useAppSelector((state: RootState): ListType => state.list);
+    const list = useAppSelector((state: RootState): ListState => state.list);
 
     const renderItem = ({ item, index }: AppListRenderItem) => {
         const containerColor = item.isSearched ? colors.SEARCH_ITEM :
@@ -20,7 +20,6 @@ const AppList = (): JSX.Element => {
         return <AppListItem
             data={item}
             containerColor={containerColor}
-            rank={index + 1}
             textColor={textColor}
         />
     }
