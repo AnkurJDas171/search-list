@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alert component should not render Alert is showAlert state is false 1`] = `
-<Modal
-  animationType="fade"
-  hardwareAccelerated={false}
-  onRequestClose={[Function]}
-  transparent={true}
-  visible={false}
-/>
-`;
-
 exports[`Alert component should not render Alert when showAlert state is false 1`] = `
 <Modal
   animationType="fade"

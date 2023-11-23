@@ -42,7 +42,7 @@ const AppList = (): JSX.Element => {
 
 const styles = StyleSheet.create({
     body: {
-        flex: 4,
+        flex: 8,
         width: '100%'
     },
     listContainer: {

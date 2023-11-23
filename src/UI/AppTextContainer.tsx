@@ -3,6 +3,8 @@ import { ListItem } from "@rneui/themed";
 import { AppTextContrainerProps } from "./types";
 import { StyleSheet } from "react-native";
 import colors from "../assets/colors";
+import { testID } from "../assets/Constants";
+import { fontSize } from "../utils";
 
 const AppTextContainer = ({
     title,
@@ -15,7 +17,7 @@ const AppTextContainer = ({
         >
             <ListItem.Title 
                 style={[styles.text, { color: textColor }]}
-                testID="app-text-container"
+                testID={testID.APP_TEXT_CONTAINER}
             >
                 {`${title}`}
             </ListItem.Title>
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
     },
     text: {
         textAlign: 'left',
-        fontSize: 12,
+        fontSize: fontSize(11),
     }
 })
 

@@ -24,3 +24,7 @@ export type AppListItemProps = {
 export type SearchBarButtonType = {
     searchedName: string
 }
+
+export type FuzzySearchButtonType = {
+    searchedName: string
+}

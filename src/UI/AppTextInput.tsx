@@ -4,6 +4,8 @@ import { Input } from "@rneui/themed";
 
 import { AppTextInputProps } from "./types";
 import colors from "../assets/colors";
+import { height } from "../utils";
+import { testID } from "../assets/Constants";
 
 
 const AppTextInput = ({
@@ -19,7 +21,7 @@ const AppTextInput = ({
             onChangeText={handleTextChange}
             placeholder={placeholder}
             leftIcon={icon}
-            testID="app-text-input"
+            testID={testID.APP_TEXT_INPUT}
             value={value}
         />
     )
@@ -32,7 +34,8 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         display: 'flex',
         flexDirection: 'row',
-        width: '55%',
+        width: '45%',
+        height: height(40)
     },
     inputContainer: {
         borderBottomWidth: 0,

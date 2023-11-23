@@ -7,6 +7,7 @@ import { RootState } from "../store";
 import { AlertState } from "../store/state/type";
 import { resetAlert } from "../store/slice/alert.slice";
 import { ALERT_VISIBLE_TIME } from "../assets/Constants";
+import { fontSize } from "../utils";
 
 const AppAlert = (): JSX.Element => {
     const dispatch = useAppDispatch();
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
         marginBottom: '20%'
     },
     text: {
-        fontSize: 15,
+        fontSize: fontSize(12),
         paddingHorizontal: 20,
         textAlign: 'center',
     }

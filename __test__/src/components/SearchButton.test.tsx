@@ -1,7 +1,7 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react-native";
 
-import SearchBarButton from "../../../src/components/SearchBarButton";
+import SearchButton from "../../../src/components/SearchButton";
 import mockUsersdata from "../../__mock__/data/UsersData";
 import * as hooks from "../../../src/hooks/reduxHooks";
 import { testID } from "../../../src/assets/Constants";
@@ -14,7 +14,7 @@ jest.mock("../../../src/hooks/reduxHooks", () => ({
 describe("Search bar buttton", () => {
     it("should render button", () => {
         const screen = render(
-            <SearchBarButton
+            <SearchButton
                 searchedName={""}
             />
         )
@@ -29,7 +29,7 @@ describe("Search bar buttton", () => {
         jest.spyOn(hooks, 'useAppDispatch');
 
         const screen = render(
-            <SearchBarButton
+            <SearchButton
                 searchedName={"testName"}
             />
         )

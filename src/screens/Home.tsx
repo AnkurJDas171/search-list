@@ -6,13 +6,14 @@ import SearchBar from "../components/SearchBar";
 import AppAlert from "../components/AppAlert";
 import ReverseListButton from "../components/ReverseListButton";
 import SortListButton from "../components/SortListButton";
+import { testID } from "../assets/Constants";
 
 const Home = (): JSX.Element => {
     return (
         <>
             <View
                 style={styles.body}
-                testID="app-home-screen"
+                testID={testID.APP_HOME_SCREEN}
             >
                 <SearchBar />
                 <View style={styles.buttonConatiner}>
@@ -32,6 +33,7 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     buttonConatiner: {
+        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-around'
     }

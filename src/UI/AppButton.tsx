@@ -3,6 +3,8 @@ import { StyleSheet } from "react-native";
 import { Button } from '@rneui/themed';
 
 import { AppButtonProps } from "./types";
+import { testID } from "../assets/Constants";
+import { fontSize } from "../utils";
 
 const AppButton = ({
     color,
@@ -20,7 +22,7 @@ const AppButton = ({
             containerStyle={[styles.container, containerStyle]}
             onPress={handlePress}
             disabled={isDisable}
-            testID="app-button"
+            testID={testID.APP_BUTTON}
         />
     )
 }
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontWeight: 'bold',
-        fontSize: 18
+        fontSize: fontSize(11)
     }
 })
 

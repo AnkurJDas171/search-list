@@ -3,7 +3,8 @@ import { StyleSheet, View } from "react-native";
 
 import AppTextInput from "../UI/AppTextInput";
 import SearchIcon from "../assets/icons/Search";
-import SearchBarButton from "./SearchBarButton";
+import SearchButton from "./SearchButton";
+import FuzzySearchButton from "./FuzzySearchButton";
 
 const SearchBar = (): JSX.Element => {
     const [text, setText] = useState('');
@@ -13,7 +14,7 @@ const SearchBar = (): JSX.Element => {
     }
 
     return (
-        <View 
+        <View
             style={styles.body}
             testID="app-search-bar"
         >
@@ -23,9 +24,14 @@ const SearchBar = (): JSX.Element => {
                 placeholder="name"
                 value={text}
             />
-            <SearchBarButton
-                searchedName={text}
-            />
+            <View style={styles.buttonConatiner}>
+                <SearchButton
+                    searchedName={text}
+                />
+                <FuzzySearchButton
+                    searchedName={text}
+                />
+            </View>
         </View>
     )
 }
@@ -37,6 +43,11 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: 'space-evenly',
         alignItems: 'center'
+    },
+    buttonConatiner: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '45%'
     }
 })
 

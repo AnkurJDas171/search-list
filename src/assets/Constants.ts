@@ -11,6 +11,7 @@ export const LIST_TITLES = [
 export const LIST_LENGTH = 10;
 
 export const buttonTitles = {
+    FUZZY_SEARCH: "Fuzzy Search",
     SEARCH: "Search",
     SHOW_LOWEST_RANKS: "Show lowest ranks",
     SORT_NAMES: "Sort names"

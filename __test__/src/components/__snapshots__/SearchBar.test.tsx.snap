@@ -224,6 +224,96 @@ exports[`Search bar component should be able to change text in search bar 1`] = 
       </View>
     </View>
   </View>
+  <View
+    style={
+      [
+        {
+          "overflow": "hidden",
+        },
+        {
+          "borderRadius": 2,
+        },
+        [
+          {
+            "paddingVertical": 5,
+            "width": "30%",
+          },
+          {
+            "width": "auto",
+          },
+        ],
+        false,
+      ]
+    }
+    testID="RNE_BUTTON_WRAPPER"
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": false,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+      testID="app-button"
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(111, 202, 186, 1)",
+            "borderColor": "#2089dc",
+            "borderRadius": 5,
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 8,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "paddingVertical": 1,
+              "textAlign": "center",
+            }
+          }
+        >
+          Fuzzy Search
+        </Text>
+      </View>
+    </View>
+  </View>
 </View>
 `;
 
@@ -447,6 +537,96 @@ exports[`Search bar component should render search bar 1`] = `
           }
         >
           Search
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "overflow": "hidden",
+        },
+        {
+          "borderRadius": 2,
+        },
+        [
+          {
+            "paddingVertical": 5,
+            "width": "30%",
+          },
+          {
+            "width": "auto",
+          },
+        ],
+        false,
+      ]
+    }
+    testID="RNE_BUTTON_WRAPPER"
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": false,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+      testID="app-button"
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "hsl(208, 8%, 90%)",
+            "borderColor": "#2089dc",
+            "borderRadius": 5,
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 8,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "hsl(208, 8%, 63%)",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "paddingVertical": 1,
+              "textAlign": "center",
+            }
+          }
+        >
+          Fuzzy Search
         </Text>
       </View>
     </View>

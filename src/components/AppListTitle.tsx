@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import AppTextContainer from "../UI/AppTextContainer";
 import { LIST_TITLES } from "../assets/Constants";
 import colors from "../assets/colors";
+import { height } from "../utils";
 
 const AppListTitle = (): JSX.Element => {
     return (
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.LIST_TITLE,
         display: 'flex',
         flexDirection: 'row',
-        height: '10%',
+        height: height(60),
         justifyContent: 'center',
     }
 })

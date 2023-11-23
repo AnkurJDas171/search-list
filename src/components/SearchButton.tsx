@@ -10,8 +10,9 @@ import { clearList, getList } from "../store/slice/list.slice";
 import { setAlert } from "../store/slice/alert.slice";
 import { SearchBarButtonType } from "./types";
 import { ALERT_MESSAGE } from "../assets/Constants";
+import { StyleSheet } from "react-native";
 
-const SearchBarButton = ({
+const SearchButton = ({
     searchedName
 }: SearchBarButtonType): JSX.Element => {
     const users = useAppSelector((state: RootState): UserState => state.users);
@@ -33,12 +34,19 @@ const SearchBarButton = ({
     return (
         <AppButton
             color={colors.BUTTON}
+            containerStyle={styles.container}
             handlePress={handlePress}
+            isDisable={searchedName.length === 0}
             title={"Search"}
             titleColor={"white"}
-            isDisable={searchedName.length === 0}
         />
     )
 }
 
-export default SearchBarButton;
+const styles = StyleSheet.create({
+    container: {
+        width: 'auto'
+    }
+})
+
+export default SearchButton;
