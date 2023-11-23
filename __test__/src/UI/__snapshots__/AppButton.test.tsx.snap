@@ -77,7 +77,7 @@ exports[`App button should render button 1`] = `
         style={
           {
             "color": "#fff",
-            "fontSize": 18,
+            "fontSize": 22,
             "fontWeight": "bold",
             "paddingVertical": 1,
             "textAlign": "center",

@@ -31,8 +31,9 @@ exports[`Home component should render the component 1`] = `
             "borderRadius": 50,
             "display": "flex",
             "flexDirection": "row",
+            "height": 80,
             "paddingHorizontal": 10,
-            "width": "55%",
+            "width": "45%",
           }
         }
         testID="RNE__Input__view-wrapper"
@@ -148,179 +149,191 @@ exports[`Home component should render the component 1`] = `
       </View>
       <View
         style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            {
-              "borderRadius": 2,
-            },
-            [
-              {
-                "paddingVertical": 5,
-                "width": "30%",
-              },
-              undefined,
-            ],
-            false,
-          ]
+          {
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "width": "45%",
+          }
         }
-        testID="RNE_BUTTON_WRAPPER"
       >
         <View
-          accessibilityRole="button"
-          accessibilityState={
-            {
-              "busy": false,
-              "checked": undefined,
-              "disabled": true,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            {
-              "opacity": 1,
-            }
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 2,
+              },
+              [
+                {
+                  "paddingVertical": 5,
+                  "width": "30%",
+                },
+                {
+                  "width": "auto",
+                },
+              ],
+              false,
+            ]
           }
-          testID="app-button"
+          testID="RNE_BUTTON_WRAPPER"
         >
           <View
-            style={
+            accessibilityRole="button"
+            accessibilityState={
               {
-                "alignItems": "center",
-                "backgroundColor": "hsl(208, 8%, 90%)",
-                "borderColor": "#2089dc",
-                "borderRadius": 5,
-                "borderWidth": 0,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "padding": 8,
-                "paddingHorizontal": 10,
+                "busy": false,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="app-button"
           >
-            <Text
+            <View
               style={
                 {
-                  "color": "hsl(208, 8%, 63%)",
-                  "fontSize": 18,
-                  "fontWeight": "bold",
-                  "paddingVertical": 1,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "hsl(208, 8%, 90%)",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 5,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                  "paddingHorizontal": 10,
                 }
               }
             >
-              Search
-            </Text>
+              <Text
+                style={
+                  {
+                    "color": "hsl(208, 8%, 63%)",
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                    "paddingVertical": 1,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Search
+              </Text>
+            </View>
           </View>
         </View>
-      </View>
-      <View
-        style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            {
-              "borderRadius": 2,
-            },
+        <View
+          style={
             [
               {
-                "paddingVertical": 5,
-                "width": "30%",
+                "overflow": "hidden",
               },
               {
-                "width": "auto",
+                "borderRadius": 2,
               },
-            ],
-            false,
-          ]
-        }
-        testID="RNE_BUTTON_WRAPPER"
-      >
-        <View
-          accessibilityRole="button"
-          accessibilityState={
-            {
-              "busy": false,
-              "checked": undefined,
-              "disabled": true,
-              "expanded": undefined,
-              "selected": undefined,
-            }
+              [
+                {
+                  "paddingVertical": 5,
+                  "width": "30%",
+                },
+                {
+                  "width": "auto",
+                },
+              ],
+              false,
+            ]
           }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "opacity": 1,
-            }
-          }
-          testID="app-button"
+          testID="RNE_BUTTON_WRAPPER"
         >
           <View
-            style={
+            accessibilityRole="button"
+            accessibilityState={
               {
-                "alignItems": "center",
-                "backgroundColor": "hsl(208, 8%, 90%)",
-                "borderColor": "#2089dc",
-                "borderRadius": 5,
-                "borderWidth": 0,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "padding": 8,
-                "paddingHorizontal": 10,
+                "busy": false,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="app-button"
           >
-            <Text
+            <View
               style={
                 {
-                  "color": "hsl(208, 8%, 63%)",
-                  "fontSize": 18,
-                  "fontWeight": "bold",
-                  "paddingVertical": 1,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "hsl(208, 8%, 90%)",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 5,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                  "paddingHorizontal": 10,
                 }
               }
             >
-              Fuzzy Search
-            </Text>
+              <Text
+                style={
+                  {
+                    "color": "hsl(208, 8%, 63%)",
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                    "paddingVertical": 1,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Fuzzy Search
+              </Text>
+            </View>
           </View>
         </View>
       </View>
@@ -328,6 +341,7 @@ exports[`Home component should render the component 1`] = `
     <View
       style={
         {
+          "flex": 1,
           "flexDirection": "row",
           "justifyContent": "space-around",
         }
@@ -411,7 +425,7 @@ exports[`Home component should render the component 1`] = `
               style={
                 {
                   "color": "rgba(255, 255, 255, 1)",
-                  "fontSize": 18,
+                  "fontSize": 22,
                   "fontWeight": "bold",
                   "paddingVertical": 1,
                   "textAlign": "center",
@@ -501,7 +515,7 @@ exports[`Home component should render the component 1`] = `
               style={
                 {
                   "color": "hsl(208, 8%, 63%)",
-                  "fontSize": 18,
+                  "fontSize": 22,
                   "fontWeight": "bold",
                   "paddingVertical": 1,
                   "textAlign": "center",
@@ -517,7 +531,7 @@ exports[`Home component should render the component 1`] = `
     <View
       style={
         {
-          "flex": 4,
+          "flex": 8,
           "width": "100%",
         }
       }
@@ -557,7 +571,7 @@ exports[`Home component should render the component 1`] = `
         <Text
           style={
             {
-              "fontSize": 15,
+              "fontSize": 24,
               "paddingHorizontal": 20,
               "textAlign": "center",
             }
@@ -600,8 +614,9 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
             "borderRadius": 50,
             "display": "flex",
             "flexDirection": "row",
+            "height": 80,
             "paddingHorizontal": 10,
-            "width": "55%",
+            "width": "45%",
           }
         }
         testID="RNE__Input__view-wrapper"
@@ -717,179 +732,191 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
       </View>
       <View
         style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            {
-              "borderRadius": 2,
-            },
-            [
-              {
-                "paddingVertical": 5,
-                "width": "30%",
-              },
-              undefined,
-            ],
-            false,
-          ]
+          {
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "width": "45%",
+          }
         }
-        testID="RNE_BUTTON_WRAPPER"
       >
         <View
-          accessibilityRole="button"
-          accessibilityState={
-            {
-              "busy": false,
-              "checked": undefined,
-              "disabled": true,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            {
-              "opacity": 1,
-            }
+            [
+              {
+                "overflow": "hidden",
+              },
+              {
+                "borderRadius": 2,
+              },
+              [
+                {
+                  "paddingVertical": 5,
+                  "width": "30%",
+                },
+                {
+                  "width": "auto",
+                },
+              ],
+              false,
+            ]
           }
-          testID="app-button"
+          testID="RNE_BUTTON_WRAPPER"
         >
           <View
-            style={
+            accessibilityRole="button"
+            accessibilityState={
               {
-                "alignItems": "center",
-                "backgroundColor": "hsl(208, 8%, 90%)",
-                "borderColor": "#2089dc",
-                "borderRadius": 5,
-                "borderWidth": 0,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "padding": 8,
-                "paddingHorizontal": 10,
+                "busy": false,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="app-button"
           >
-            <Text
+            <View
               style={
                 {
-                  "color": "hsl(208, 8%, 63%)",
-                  "fontSize": 18,
-                  "fontWeight": "bold",
-                  "paddingVertical": 1,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "hsl(208, 8%, 90%)",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 5,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                  "paddingHorizontal": 10,
                 }
               }
             >
-              Search
-            </Text>
+              <Text
+                style={
+                  {
+                    "color": "hsl(208, 8%, 63%)",
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                    "paddingVertical": 1,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Search
+              </Text>
+            </View>
           </View>
         </View>
-      </View>
-      <View
-        style={
-          [
-            {
-              "overflow": "hidden",
-            },
-            {
-              "borderRadius": 2,
-            },
+        <View
+          style={
             [
               {
-                "paddingVertical": 5,
-                "width": "30%",
+                "overflow": "hidden",
               },
               {
-                "width": "auto",
+                "borderRadius": 2,
               },
-            ],
-            false,
-          ]
-        }
-        testID="RNE_BUTTON_WRAPPER"
-      >
-        <View
-          accessibilityRole="button"
-          accessibilityState={
-            {
-              "busy": false,
-              "checked": undefined,
-              "disabled": true,
-              "expanded": undefined,
-              "selected": undefined,
-            }
+              [
+                {
+                  "paddingVertical": 5,
+                  "width": "30%",
+                },
+                {
+                  "width": "auto",
+                },
+              ],
+              false,
+            ]
           }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "opacity": 1,
-            }
-          }
-          testID="app-button"
+          testID="RNE_BUTTON_WRAPPER"
         >
           <View
-            style={
+            accessibilityRole="button"
+            accessibilityState={
               {
-                "alignItems": "center",
-                "backgroundColor": "hsl(208, 8%, 90%)",
-                "borderColor": "#2089dc",
-                "borderRadius": 5,
-                "borderWidth": 0,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "padding": 8,
-                "paddingHorizontal": 10,
+                "busy": false,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="app-button"
           >
-            <Text
+            <View
               style={
                 {
-                  "color": "hsl(208, 8%, 63%)",
-                  "fontSize": 18,
-                  "fontWeight": "bold",
-                  "paddingVertical": 1,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "hsl(208, 8%, 90%)",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 5,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                  "paddingHorizontal": 10,
                 }
               }
             >
-              Fuzzy Search
-            </Text>
+              <Text
+                style={
+                  {
+                    "color": "hsl(208, 8%, 63%)",
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                    "paddingVertical": 1,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Fuzzy Search
+              </Text>
+            </View>
           </View>
         </View>
       </View>
@@ -897,6 +924,7 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
     <View
       style={
         {
+          "flex": 1,
           "flexDirection": "row",
           "justifyContent": "space-around",
         }
@@ -980,7 +1008,7 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
               style={
                 {
                   "color": "rgba(255, 255, 255, 1)",
-                  "fontSize": 18,
+                  "fontSize": 22,
                   "fontWeight": "bold",
                   "paddingVertical": 1,
                   "textAlign": "center",
@@ -1070,7 +1098,7 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
               style={
                 {
                   "color": "rgba(255, 255, 255, 1)",
-                  "fontSize": 18,
+                  "fontSize": 22,
                   "fontWeight": "bold",
                   "paddingVertical": 1,
                   "textAlign": "center",
@@ -1086,7 +1114,7 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
     <View
       style={
         {
-          "flex": 4,
+          "flex": 8,
           "width": "100%",
         }
       }
@@ -1126,7 +1154,7 @@ exports[`Home component should show alert when seltAlert is true 1`] = `
         <Text
           style={
             {
-              "fontSize": 15,
+              "fontSize": 24,
               "paddingHorizontal": 20,
               "textAlign": "center",
             }

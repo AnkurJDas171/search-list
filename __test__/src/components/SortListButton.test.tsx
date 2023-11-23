@@ -22,7 +22,7 @@ describe("Sort List Button", () => {
         const screen = render(<SortListButton />);
         const button = await screen.findByTestId(testID.APP_BUTTON);
 
-        expect(screen).toMatchSnapshot();
+        expect(screen.toJSON()).toMatchSnapshot();
         expect(button).toBeTruthy();
     })
 

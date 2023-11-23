@@ -79,7 +79,7 @@ exports[`Sort List Button should render button 1`] = `
         style={
           {
             "color": "rgba(255, 255, 255, 1)",
-            "fontSize": 18,
+            "fontSize": 22,
             "fontWeight": "bold",
             "paddingVertical": 1,
             "textAlign": "center",

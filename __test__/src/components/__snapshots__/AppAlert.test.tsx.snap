@@ -45,7 +45,7 @@ exports[`Alert component should render Alert when showAlert state is true 1`] = 
       <Text
         style={
           {
-            "fontSize": 15,
+            "fontSize": 24,
             "paddingHorizontal": 20,
             "textAlign": "center",
           }

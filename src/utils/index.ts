@@ -2,16 +2,13 @@ import { Dimensions, PixelRatio } from "react-native";
 import Fuse from "fuse.js";
 
 import { ListState, UserState, UserType } from "../store/state/type";
+import { BASE_SCREEN_WIDTH_VALUE } from "../assets/Constants";
 
 const {
-    height: HEIGHT,
     width: WIDTH
 } = Dimensions.get("window");
 
-console.log(HEIGHT, WIDTH);
-
-const heightBaseScale = HEIGHT / 667;
-const widthBaseScale = WIDTH / 375;
+const widthBaseScale = WIDTH / BASE_SCREEN_WIDTH_VALUE;
 
 export const fontSize = (size: number): number => {
     const newSize = size * widthBaseScale;

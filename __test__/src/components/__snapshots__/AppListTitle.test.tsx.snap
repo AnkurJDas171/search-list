@@ -8,7 +8,7 @@ exports[`List title component should render list title component 1`] = `
       "backgroundColor": "rgba(111, 202, 186, 1)",
       "display": "flex",
       "flexDirection": "row",
-      "height": "10%",
+      "height": 120,
       "justifyContent": "center",
     }
   }
@@ -38,7 +38,7 @@ exports[`List title component should render list title component 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "rgba(255, 255, 255, 1)",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -73,7 +73,7 @@ exports[`List title component should render list title component 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "rgba(255, 255, 255, 1)",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -108,7 +108,7 @@ exports[`List title component should render list title component 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "rgba(255, 255, 255, 1)",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -143,7 +143,7 @@ exports[`List title component should render list title component 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "rgba(255, 255, 255, 1)",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }

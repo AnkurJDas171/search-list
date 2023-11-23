@@ -10,6 +10,8 @@ export const LIST_TITLES = [
 ];
 export const LIST_LENGTH = 10;
 
+export const BASE_SCREEN_WIDTH_VALUE = 375;
+
 export const buttonTitles = {
     FUZZY_SEARCH: "Fuzzy Search",
     SEARCH: "Search",

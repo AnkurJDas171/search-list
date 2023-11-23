@@ -41,7 +41,7 @@ exports[`List Item should render list item data 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "#000",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -76,7 +76,7 @@ exports[`List Item should render list item data 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "#000",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -111,7 +111,7 @@ exports[`List Item should render list item data 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "#000",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }
@@ -146,7 +146,7 @@ exports[`List Item should render list item data 1`] = `
           {
             "backgroundColor": "transparent",
             "color": "#000",
-            "fontSize": 12,
+            "fontSize": 22,
             "textAlign": "left",
           }
         }

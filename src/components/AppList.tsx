@@ -8,6 +8,7 @@ import colors from "../assets/colors";
 import { ListState } from "../store/state/type";
 import { RootState } from "../store";
 import { useAppSelector } from "../hooks/reduxHooks";
+import { testID } from "../assets/Constants";
 
 const AppList = (): JSX.Element => {
     const list = useAppSelector((state: RootState): ListState => state.list);
@@ -33,7 +34,7 @@ const AppList = (): JSX.Element => {
                     keyExtractor={item => item.uid}
                     renderItem={renderItem}
                     style={styles.listContainer}
-                    testID="app-list"
+                    testID={testID.APP_LIST}
                 />
             </>}
         </View>

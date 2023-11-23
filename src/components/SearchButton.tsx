@@ -20,11 +20,11 @@ const SearchButton = ({
 
     const handlePress = (): void => {
         if (isUserPresent(searchedName, users)) {
-            const action = {
+            const payload = {
                 users,
                 searchedName
             }
-            dispatch(getList(action))
+            dispatch(getList(payload))
         } else {
             dispatch(clearList());
             dispatch(setAlert(ALERT_MESSAGE));

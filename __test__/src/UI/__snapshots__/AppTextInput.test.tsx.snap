@@ -9,8 +9,9 @@ exports[`Text Input should be able to change text in search bar 1`] = `
       "borderRadius": 50,
       "display": "flex",
       "flexDirection": "row",
+      "height": 80,
       "paddingHorizontal": 10,
-      "width": "55%",
+      "width": "45%",
     }
   }
   testID="RNE__Input__view-wrapper"
@@ -135,8 +136,9 @@ exports[`Text Input should render text input 1`] = `
       "borderRadius": 50,
       "display": "flex",
       "flexDirection": "row",
+      "height": 80,
       "paddingHorizontal": 10,
-      "width": "55%",
+      "width": "45%",
     }
   }
   testID="RNE__Input__view-wrapper"

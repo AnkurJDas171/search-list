@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search bar buttton should render button 1`] = `
+exports[`Fuzzy match button should render the button 1`] = `
 <View
   style={
     [
@@ -30,7 +30,7 @@ exports[`Search bar buttton should render button 1`] = `
       {
         "busy": false,
         "checked": undefined,
-        "disabled": true,
+        "disabled": false,
         "expanded": undefined,
         "selected": undefined,
       }
@@ -64,7 +64,7 @@ exports[`Search bar buttton should render button 1`] = `
       style={
         {
           "alignItems": "center",
-          "backgroundColor": "hsl(208, 8%, 90%)",
+          "backgroundColor": "rgba(111, 202, 186, 1)",
           "borderColor": "#2089dc",
           "borderRadius": 5,
           "borderWidth": 0,
@@ -78,7 +78,7 @@ exports[`Search bar buttton should render button 1`] = `
       <Text
         style={
           {
-            "color": "hsl(208, 8%, 63%)",
+            "color": "rgba(255, 255, 255, 1)",
             "fontSize": 22,
             "fontWeight": "bold",
             "paddingVertical": 1,
@@ -86,7 +86,7 @@ exports[`Search bar buttton should render button 1`] = `
           }
         }
       >
-        Search
+        Fuzzy Search
       </Text>
     </View>
   </View>

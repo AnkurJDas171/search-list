@@ -5,10 +5,9 @@ import AppButton from "../UI/AppButton";
 import colors from "../assets/colors";
 import { ALERT_MESSAGE, buttonTitles } from "../assets/Constants";
 import { FuzzySearchButtonType } from "./types";
-import { useAppSelector } from "../hooks/reduxHooks";
+import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 import { RootState } from "../store";
 import { UserState } from "../store/state/type";
-import { useDispatch } from "react-redux";
 import { clearList, getFuzzyMatchedList } from "../store/slice/list.slice";
 import { isUserPresentInFuzzyMatch } from "../utils";
 import { setAlert } from "../store/slice/alert.slice";
@@ -17,7 +16,7 @@ const FuzzySearchButton = ({
     searchedName
 }: FuzzySearchButtonType): JSX.Element => {
     const users = useAppSelector((state: RootState): UserState => state.users);
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     const handlePress = (): void => {
         if(isUserPresentInFuzzyMatch(searchedName, users)){

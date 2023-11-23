@@ -817,4 +817,30 @@ export const expectedValue = [
   }
 ]
 
+export const expectedFuzzyMatchedReturnData = [
+  {
+    bananas: 27800,
+    isSearched: false,
+    lastDayPlayed: '2018-12-30',
+    longestStreak: 7,
+    name: 'Patrick Kennedy',
+    rank: 2,
+    stars: 104,
+    subscribed: true,
+    uid: 'zOztg0xHJwN2GSHO9XSFAPvTl7E2'
+  },
+  {
+    bananas: 4100,
+    isSearched: false,
+    lastDayPlayed: '2018-11-27',
+    longestStreak: 3,
+    name: 'Beatrice Kalalo',
+    rank: 20,
+    stars: 14,
+    subscribed: false,
+    uid: 'yzqGJMNMEPU7lsjq7TE19qmectr1'
+  }
+]
+
+
 export default mockUsersdata;

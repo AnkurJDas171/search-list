@@ -21,7 +21,7 @@ describe("Reverse List Button", () => {
         const screen = render(<ReverseListButton />)
         const button = await screen.findByTestId(testID.APP_BUTTON);
 
-        expect(screen).toMatchSnapshot();
+        expect(screen.toJSON()).toMatchSnapshot();
         expect(button).toBeTruthy();
     })
 

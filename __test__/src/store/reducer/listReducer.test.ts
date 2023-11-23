@@ -1,7 +1,7 @@
 import { LIST_LENGTH } from "../../../../src/assets/Constants";
 import listReducer from "../../../../src/store/reducer/listReducer"
 import { ListItemData, ListState } from "../../../../src/store/state/type"
-import mockLIstData, { expectedLowestRankValues, expectedSortedValues } from "../../../__mock__/data/ListData";
+import mockLIstData, { expectedFuzzyMatchedList, expectedLowestRankValues, expectedSortedValues } from "../../../__mock__/data/ListData";
 import mockUsersdata from "../../../__mock__/data/UsersData"
 import { compareObjectData } from "../../../__mock__/utils";
 
@@ -75,5 +75,51 @@ describe("List reducer", () => {
             
             expect(isMatched).toBe(true);
         }
+    })
+
+    it("getFuzzyMatchedList should return a list having users partially matched with searched name", () => {
+        const action = {
+            payload: {
+                users: mockUsersdata,
+                searchedName: "Rica"
+            },
+            type: "list"
+        }
+
+        const list = listReducer.getFuzzyMatchedList([], action);
+
+        for (let i = 0; i < list.length; i++) {
+            const isMatched = compareObjectData(expectedFuzzyMatchedList[i], list[i])
+            
+            expect(isMatched).toBe(true);
+        }
+    })
+
+    it("getFuzzyMatchedList should return a empty list when search name does not match with users data", () => {
+        const action = {
+            payload: {
+                users: mockUsersdata,
+                searchedName: "Hello world"
+            },
+            type: "list"
+        }
+
+        const list = listReducer.getFuzzyMatchedList([], action);
+
+        expect(list.length).toBe(0);
+    })
+
+    it("getFuzzyMatchedList should return a empty list when users data is empty", () => {
+        const action = {
+            payload: {
+                users: [],
+                searchedName: "Rica"
+            },
+            type: "list"
+        }
+
+        const list = listReducer.getFuzzyMatchedList([], action);
+
+        expect(list.length).toBe(0);
     })
 })

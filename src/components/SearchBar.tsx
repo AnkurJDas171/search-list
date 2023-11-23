@@ -5,6 +5,7 @@ import AppTextInput from "../UI/AppTextInput";
 import SearchIcon from "../assets/icons/Search";
 import SearchButton from "./SearchButton";
 import FuzzySearchButton from "./FuzzySearchButton";
+import { testID } from "../assets/Constants";
 
 const SearchBar = (): JSX.Element => {
     const [text, setText] = useState('');
@@ -16,7 +17,7 @@ const SearchBar = (): JSX.Element => {
     return (
         <View
             style={styles.body}
-            testID="app-search-bar"
+            testID={testID.APP_SEARCH_BAR}
         >
             <AppTextInput
                 handleTextChange={handleChange}
