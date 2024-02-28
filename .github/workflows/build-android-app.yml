@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install Java
         uses: actions/setup-java@v3
@@ -23,7 +23,7 @@ jobs:
         uses: gradle/wrapper-validation-action@v1
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "18"
           cache: "npm"
@@ -37,7 +37,7 @@ jobs:
           ./gradlew assembleRelease
 
       - name: Upload application
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: app
           path: android/app/build/outputs/apk/release/app-release.apk
