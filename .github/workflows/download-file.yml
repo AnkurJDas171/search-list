@@ -1,4 +1,4 @@
-name: Download file form firebase
+name: "Download file form firebase"
 
 on:
   workflow_dispatch:
