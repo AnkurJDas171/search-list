@@ -24,7 +24,7 @@ jobs:
         run: firebase login:ci --no-localhost
 
       - name: Download Files from Firebase Storage
-        run: firebase storage:download --token "${{secreats.FIREBASE_TOKEN}}" --output ./downloaded-files gs://search-list-c9007.appspot.com/prod.keystore
+        run: firebase storage:download --token "${{secrets.FIREBASE_TOKEN}}" --output ./downloaded-files gs://search-list-c9007.appspot.com/prod.keystore
 
       - name: Upload file to artificate
         uses: actions/upload-artifact@v4
