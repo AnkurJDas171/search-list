@@ -18,10 +18,10 @@ jobs:
           node-vesion: 18
 
       - name: install firebase cli
-        uses: npm install firebase-tools
+        run: npm install firebase-tools
 
       - name: Authenticate with firebase
-        uses: firebase login:ci --no-localhost
+        run: firebase login:ci --no-localhost
 
       - name: Download Files from Firebase Storage
         run: firebase storage:download --token "${{secreats.FIREBASE_TOKEN}}" --output ./downloaded-files gs://search-list-c9007.appspot.com/prod.keystore
