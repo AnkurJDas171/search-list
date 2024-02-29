@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367480798929",
+    "project_id": "search-list-c9007",
+    "storage_bucket": "search-list-c9007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367480798929:android:d401aa42e31a55efa98ff0",
+        "android_client_info": {
+          "package_name": "com.searchfromlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW9cg57KzfgRuSDdeKJMqMn0POS-CpBmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

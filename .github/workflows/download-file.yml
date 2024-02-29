@@ -1,0 +1,42 @@
+name: Download file form firebase
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+
+
+jobs:
+  build:
+    name: Download file
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install node JS
+        uses: actions/setup-node@v4
+        with:
+          node-vesion: 18
+
+      - name: install firebase cli
+        uses: npm install -g firebase-tools
+      
+      - name: Authenticate with firebase
+        env: 
+          FIREBASE_TOKEN: ${{secreats.FIREBASE_TOKEN}}
+        uses: firebase login:ci --no-localhost
+
+      - name: Download Files from Firebase Storage
+        run: firebase storage:download --token "${FIREBASE_TOKEN}" --output ./downloaded-files gs://search-list-c9007.appspot.com/prod.keystore
+
+      - name: Upload file to artificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: keystore
+          path: android/app/build/outputs/apk/prod.keystore
+          retention-days: 1
+        
+
+
+# https://firebasestorage.googleapis.com/v0/b/search-list-c9007.appspot.com/o/prod.keystore?alt=media&token=b735eb7f-9475-42df-af47-192ea83b22d9
