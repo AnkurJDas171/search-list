@@ -5,10 +5,8 @@ on:
     branches:
       - main
 
-
 jobs:
   build:
-    name: Download file
     runs-on: macos-latest
     steps:
       - name: Checkout repository
