@@ -58,6 +58,9 @@ jobs:
           node-version: "18"
           cache: "npm"
 
+      - name: Install React Native CLI
+        run: npm install -g react-native-cli
+
       - name: Run NPM Install
         run:  npm i
 
