@@ -19,9 +19,9 @@ jobs:
 
       - name: install firebase cli
         uses: npm install firebase-tools
-      
+
       - name: Authenticate with firebase
-        env: 
+        env:
           FIREBASE_TOKEN: ${{secreats.FIREBASE_TOKEN}}
         uses: firebase login:ci --no-localhost
 
@@ -34,7 +34,6 @@ jobs:
           name: keystore
           path: android/app/build/outputs/apk/prod.keystore
           retention-days: 1
-
 # jobs:
 #   build:
 #     runs-on: macos-latest
