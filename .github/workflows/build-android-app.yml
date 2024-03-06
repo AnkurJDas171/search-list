@@ -77,12 +77,14 @@ jobs:
     steps:
       - name: Install firebase CLI
         run: npm i -g firebase-tools
-      
+
       - name: Upload apk
-        run: firebase appdistribution:distribute android/app/build/outputs/apk/release/app-release.apk \
-          --app ${{secrets.FIREBASE_APP_ID}} \
-          --token ${{secrets.FIREBASE_TOKEN}} \
-          --release-notes "First app distribute"
+        run: |
+          ln -s /usr/bin/nodejs /usr/bin/node
+          firebase appdistribution:distribute android/app/build/outputs/apk/release/app-release.apk \
+            --app ${{secrets.FIREBASE_APP_ID}} \
+            --token ${{secrets.FIREBASE_TOKEN}} \
+            --release-notes "First app distribute"
 
 # firebase appdistribution:distribute test.apk  \
 #     --app 1:1234567890:android:0a1b2c3d4e5f67890  \
