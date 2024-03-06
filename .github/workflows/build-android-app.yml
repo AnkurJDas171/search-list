@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: keystore
-          path: downloads/prod.keystore
+          path: Downloads/prod.keystore
           retention-days: 1
 # jobs:
 #   build:
