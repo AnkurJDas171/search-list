@@ -23,7 +23,6 @@ jobs:
           retention-days: 1
 
   build-app:
-    needs: coverage
     runs-on: macos-latest
     steps:
       - name: Checkout repository
