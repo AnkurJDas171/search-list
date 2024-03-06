@@ -24,7 +24,7 @@ jobs:
       #   run: firebase login:ci
 
       - name: Download Files from Firebase Storage
-        run: curl 'https://firebasestorage.googleapis.com/v0/b/${{secrets.FIREBASE_BUCKET}}/o/${{secrets.FIREBASE_FILE}}?alt=media&token=${{secrets.FIREBASE_TOKEN}}' -o ${{secrets.FIREBASE_FILE}}
+        run: curl 'https://firebasestorage.googleapis.com/v0/b/${{secrets.FIREBASE_BUCKET}}/o/${{secrets.FIREBASE_FILE}}?alt=media&token=${{secrets.FIREBASE_TOKEN}}' -o ./Downloads/${{secrets.FIREBASE_FILE}}
         # run: firebase storage:download --token "${{secrets.FIREBASE_TOKEN}}" --output ./downloaded-files gs://search-list-c9007.appspot.com/prod.keystore
 
       - name: Upload file to artificate
